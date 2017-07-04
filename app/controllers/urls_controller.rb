@@ -4,7 +4,6 @@ class UrlsController < ApplicationController
 	end
 
 	def show
-		byebug
 		@url = Url.find(params[:id])
 	end
 

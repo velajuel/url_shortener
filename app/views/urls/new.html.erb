@@ -1,0 +1,15 @@
+<h3> This is urls/new </h3>
+<%= form_for @url do |f| %>
+<p>
+<div class="form-group">
+	<%= f.label "Type your URL here:" %><br>
+	<%= f.text_field :long_url, class: 'form-control' %>
+</div>
+</p>
+
+<p>
+	<%= f.submit "Shorten URL!", class: 'btn btn-default' %>
+</p>
+<% end %>
+
+<%= link_to 'Back', urls_path %>
